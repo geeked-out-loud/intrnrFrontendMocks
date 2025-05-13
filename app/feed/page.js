@@ -180,7 +180,6 @@ export default function FeedPage() {
   ];
 
   useEffect(() => {
-  if (!mounted) return null; 
     document.title = "Feed | Intrnr";
     Object.assign(document.body.style, {
       margin: "0",
