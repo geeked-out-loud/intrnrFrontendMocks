@@ -168,13 +168,13 @@ export default function Home() {
                 <b>Note:</b> This is not currently tailored for vertical screens, we're working on those currently. The app is not yet available for use. Please do not share any personal information.
               </p>
               <button
-                style={{
+                style={{ 
                   width: "100%",
                   padding: "14px",
                   fontSize: "1rem",
                   fontWeight: "bold",
                   backgroundColor: "#172a3a",
-                  color: "#fff",
+                  color: "#fff", 
                   border: "none",
                   borderRadius: "6px",
                   cursor: "pointer",
