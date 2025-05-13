@@ -179,6 +179,7 @@ export default function FeedPage() {
     { id: 3, title: "Another Post", content: "More content here." },
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     document.title = "Feed | Intrnr";
     Object.assign(document.body.style, {
@@ -187,7 +188,6 @@ export default function FeedPage() {
       border: "none",
     });
 
-    //auth check
     const ok = localStorage.getItem("intrnr_auth") === "true";
     if (!ok) router.push("/");
     else setUser({ name: "User", role: "Intrnr" });

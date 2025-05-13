@@ -106,6 +106,7 @@ export default function Home() {
             </div>
           </div>
           <div style={{ ...styles.darkCard, width: `${computedWidthVW}vw` }}>
+            /* eslint-disable @next/next/no-img-element */
             <img src="/logo.png" alt="Logo" style={styles.logo} />
           </div>
         </div>
