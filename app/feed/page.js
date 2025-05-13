@@ -180,6 +180,7 @@ export default function FeedPage() {
   ];
 
   useEffect(() => {
+  if (!mounted) return null; 
     document.title = "Feed | Intrnr";
     Object.assign(document.body.style, {
       margin: "0",
@@ -188,8 +189,8 @@ export default function FeedPage() {
     });
 
     //auth check
-    const pwd = localStorage.getItem("intrnr_local_password");
-    if (!pwd) router.push("/");
+    const ok = localStorage.getItem("intrnr_auth") === "true";
+    if (!ok) router.push("/");
     else setUser({ name: "User", role: "Intrnr" });
 
     setContent(mockPosts);

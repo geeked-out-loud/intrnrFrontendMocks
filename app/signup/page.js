@@ -206,6 +206,7 @@ export default function SignupPage() {
       }
     });
     if (correct) {
+      const ok = localStorage.getItem("intrnr_auth") === "true";
       router.push("/feed");
     } else {
       const remaining = attemptsLeft - 1;

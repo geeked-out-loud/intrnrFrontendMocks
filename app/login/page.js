@@ -155,6 +155,7 @@ export default function LoginPage() {
       if (mnemonics[idx] !== w) correct = false;
     });
     if (correct) {
+      localStorage.setItem("intrnr_auth", "true");
       router.push("/feed");
     } else {
       const rem = attemptsLeft - 1;

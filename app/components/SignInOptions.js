@@ -25,6 +25,11 @@ export default function SignInOptions({ onValidEmail }) {
     }
   };
 
+  const handleGuest = () => {
+    localStorage.setItem("intrnr_auth", "true");
+    router.push("/feed");
+  };
+
   return (
     <form onSubmit={handleSubmit} className={styles.container}>
       <h2 className={styles.heading}>
@@ -61,7 +66,7 @@ export default function SignInOptions({ onValidEmail }) {
           display: "flex",
         }}
       >
-        <button type="button" className={styles.guestButton}>
+        <button type="button" onClick={handleGuest} className={styles.guestButton}>
           Explore Intrnr As Guest
         </button>
       </a>
