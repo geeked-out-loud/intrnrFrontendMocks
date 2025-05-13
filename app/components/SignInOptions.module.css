@@ -33,7 +33,7 @@
   background-color: #aec5ca;
 }
 
-:global(input::placeholder) {
+.input::placeholder {
     color: #000d18;
   }
 
