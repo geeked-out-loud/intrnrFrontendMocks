@@ -162,7 +162,7 @@ export default function Home() {
                   fontSize: "1rem",
                   marginBottom: "25px",
                 }}
-              >
+              >{/* eslint-disable react/no-unescaped-entities */}
                 <b>This is a Mockup for the Frontend of the Intrnr app. </b><br /><br />
                 The app is currently in development and not yet available for use. The purpose of this mock is to develop and test User Interfaces for the app.<br /><br />
                 <b>Note:</b> This is not currently tailored for vertical screens, we're working on those currently. The app is not yet available for use. Please do not share any personal information.
